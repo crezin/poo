@@ -13,7 +13,6 @@ O projeto está organizado em diferentes arquivos Java, cada um representando um
 
 ## Arquivos e Classes
 
-### IPHONE.java
 
 # Funcionalidades
 
@@ -32,6 +31,10 @@ Navegador de Internet:
 exibirPagina(String url): Exibe a página da URL especificada.
 adicionarNovaAba(): Adiciona uma nova aba no navegador.
 atualizarPagina(): Atualiza a página atual.
+## Arquivos e Classes
+
+# IPHONE.java
+
 ```java
 package UML;
 
