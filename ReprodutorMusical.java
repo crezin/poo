@@ -1,22 +1,22 @@
 package UML;
+public interface ReprodutorMusical{
 
-public class ReprodutorMusical {
+    void tocar(String musica);
 
-
-        private void tocar(){
-            System.out.println("tocando musica");
+    void pausar();
+    void selecionarMusica(String musica);
+}
+class ReprodutorMusicalimpl implements ReprodutorMusical{
+        @Override
+        public void tocar(String musica){
+            System.out.println("tocando musica" + musica );
         }
-        private void pausar(){
+        @Override
+        public void pausar(){
             System.out.println("pausando...");
         }
-        private void selecionarMusica(String musica){
-            switch (musica){
-                case "Reprodutor":
-                    System.out.println("Reprodozindo");
-                case "proxima musica":
-                    System.out.println("Proxima musica");
-                case "soluciona a musica":
-                        System.out.println("Solucionando a musica");
-            }
+        @Override
+        public void selecionarMusica(String musica){
+            System.out.println("tocando musica" + musica);
         }
 }

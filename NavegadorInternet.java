@@ -1,13 +1,21 @@
 package UML;
+public interface NavegadorInternet{
+    void exibirPagina(String url);
+    void adicionarNovaAba();
+    void atualizarPagina();
+}
 
-public class NavegadorInternet {
-    private void exibirPagina(String url) {
-        System.out.println("exebindo pagina");
+class Nav implements NavegadorInternet{
+    @Override
+    public void exibirPagina(String url) {
+        System.out.println("exebindo pagina"+ url);
     }
-    private void adicionarNovaAba(){
+    @Override
+    public void adicionarNovaAba(){
         System.out.println("adicionando nova aba");
     }
-    private void atulizarPagina(){
+    @Override
+    public void atualizarPagina(){
         System.out.println("atualizando pagina... ");
 
     }
